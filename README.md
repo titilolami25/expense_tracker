@@ -29,11 +29,6 @@ A simple yet powerful web-based expense tracking application that helps users ma
 
 ## 🚀 Getting Started
 
-### Clone the Repository
-
-```bash
-git clone https://github.com/your-username/expense-tracker.git
-cd expense-tracker
 
 🔮 Live Demo
 You can view a live demo of this project by visiting [Live Demo](https://expense-tracker-three-olive-59.vercel.app/).
