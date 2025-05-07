@@ -35,10 +35,6 @@ A simple yet powerful web-based expense tracking application that helps users ma
 git clone https://github.com/your-username/expense-tracker.git
 cd expense-tracker
 
-|                                                         
-| ![Light Mode](https://github.com/user-attachments/assets/e49e1bd0-ee69-4bac-9d4b-5dd13f769444)
-| ![Dark Mode](https://github.com/user-attachments/assets/163531a6-9720-4a6d-9e4f-5095a2031115) |
-
 🔮 Live Demo
 You can view a live demo of this project by visiting [Live Demo](https://expense-tracker-three-olive-59.vercel.app/).
 This will allow you to interact with the full app and see its functionality in action.
