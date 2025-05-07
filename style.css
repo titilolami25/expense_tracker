@@ -1,0 +1,147 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #1e1e1e;
+  --accent-color: #4f46e5;
+  --card-bg: #f9f9f9;
+  --border-color: #ddd;
+  --input-bg: #ffffff;
+}
+
+body.dark-mode {
+  --bg-color: #1e1e1e;
+  --text-color: #ffffff;
+  --accent-color: #6366f1;
+  --card-bg: #2a2a40;
+  --border-color: #444;
+  --input-bg: #2f3f4f;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+  padding: 1rem;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: var(--accent-color);
+}
+
+.total,
+.income,
+.balance {
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.income {
+  color: green;
+}
+
+.balance {
+  color: blue;
+}
+
+#darkModeToggle,
+#editIncomeBtn {
+  background-color: var(--accent-color);
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.form-section form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+input,
+select,
+button {
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  background-color: var(--input-bg);
+  color: var(--text-color);
+}
+
+button {
+  background-color: var(--accent-color);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease-out;
+}
+
+button:hover {
+  background-color: #3f3cd3;
+}
+
+.list-section {
+  padding: 1rem 0;
+}
+
+.list-section h2,
+.chart-section h2 {
+  margin-bottom: 1rem;
+  color: var(--accent-color);
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 0.75rem;
+  border-bottom: 1px solid var(--border-color);
+  text-align: left;
+}
+
+/* Chart Canvas */
+canvas {
+  width: 100% !important;
+  max-width: 500px;
+  height: 300px !important;
+  margin-top: 2rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.chart-section {
+  margin-top:1.5rem;
+  background-color: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
